@@ -2,41 +2,38 @@ package ru.arvalon.animations;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.webkit.WebView;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 
 /**
- * Add http://gph.is/2q6SOmY
  * @author arvalon
+ *
+ * ActionBar color
+ * https://stackoverflow.com/questions/18288402/how-to-set-custom-actionbar-color-style/18288460
  */
 public class MainActivity extends AppCompatActivity {
 
-    static final String GIF = "https://media.giphy.com/media/h8PoRDsoFWFO0/giphy.gif";
+    static final int LOGO_SIZE = 500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        /*WebView webView = findViewById(R.id.anim_label2);
-
-        /*webView.setScrollBarStyle(View.SCROLLBARS_INSIDE_OVERLAY);
-        webView.getSettings().setLoadsImagesAutomatically(true);
-
-        webView.getSettings().setLoadWithOverviewMode(true);
-        webView.getSettings().setUseWideViewPort(true);
-
-        webView.loadUrl("file:///android_asset/animation.gif");*/
-
         ImageView imageView = findViewById(R.id.anim_label);
 
-        //Glide.with(this).load(GIF).into(imageView);
+        Glide.with(this)
+                .asGif()
+                .load(R.drawable.animation)
+                .apply(new RequestOptions().override(LOGO_SIZE, LOGO_SIZE))
+                .into(imageView);
 
-        Glide.with(this).load(R.drawable.animation).into(imageView);
-
+        findViewById(R.id.rotation_demo_button).setOnClickListener(v -> {
+            startActivity(new Intent(this, RotationDemoActivity.class));
+        });
     }
 }
