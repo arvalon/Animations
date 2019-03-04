@@ -20,7 +20,7 @@ import com.bumptech.glide.request.RequestOptions;
  */
 public class MainActivity extends AppCompatActivity {
 
-    static final int LOGO_SIZE = 500;
+    static final int LOGO_SIZE = 400;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,5 +55,8 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.raster_icon_animation_button).setOnClickListener(v ->
                 startActivity(new Intent(this, RasterIconAnimationActivity.class)));
+
+        findViewById(R.id.vector_icon_animation_button).setOnClickListener(v ->
+                startActivity(new Intent(this, VectorIconAnimationActivity.class)));
     }
 }

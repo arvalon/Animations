@@ -7,61 +7,85 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/anim_label"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintEnd_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintBottom_toBottomOf="parent">
 
-    <Button
-        android:text="Rotation Demo"
-        app:layout_constraintTop_toBottomOf="@id/anim_label"
-        android:id="@+id/rotation.demo.button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:text="Interpolation Demo"
-        app:layout_constraintTop_toBottomOf="@id/rotation.demo.button"
-        android:id="@+id/interpolation.demo.button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/anim_label"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
 
-    <Button
-        android:text="Circular Reveal Transition Demo"
-        app:layout_constraintTop_toBottomOf="@id/interpolation.demo.button"
-        android:id="@+id/circularrevealtransition.demo.button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <Button
+                android:text="Rotation Demo"
+                app:layout_constraintTop_toBottomOf="@id/anim_label"
+                android:id="@+id/rotation.demo.button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-    <Button
-        android:text="Key Frame Demo"
-        app:layout_constraintTop_toBottomOf="@id/circularrevealtransition.demo.button"
-        android:id="@+id/keyframe.demo.button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <Button
+                android:text="Interpolation Demo"
+                app:layout_constraintTop_toBottomOf="@id/rotation.demo.button"
+                android:id="@+id/interpolation.demo.button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-    <Button
-        android:text="Scene Transition"
-        app:layout_constraintTop_toBottomOf="@id/keyframe.demo.button"
-        android:id="@+id/scene.transition.button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <Button
+                android:text="Circular Reveal Transition Demo"
+                app:layout_constraintTop_toBottomOf="@id/interpolation.demo.button"
+                android:id="@+id/circularrevealtransition.demo.button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-    <Button
-        android:text="Form Animation"
-        app:layout_constraintTop_toBottomOf="@id/scene.transition.button"
-        android:id="@+id/form.animation.button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <Button
+                android:text="Key Frame Demo"
+                app:layout_constraintTop_toBottomOf="@id/circularrevealtransition.demo.button"
+                android:id="@+id/keyframe.demo.button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
 
-    <Button
-        android:text="Raster Icon Animation"
-        app:layout_constraintTop_toBottomOf="@id/form.animation.button"
-        android:id="@+id/raster.icon.animation.button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+            <Button
+                android:text="Scene Transition"
+                app:layout_constraintTop_toBottomOf="@id/keyframe.demo.button"
+                android:id="@+id/scene.transition.button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="Form Animation"
+                app:layout_constraintTop_toBottomOf="@id/scene.transition.button"
+                android:id="@+id/form.animation.button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="Raster Icon Animation"
+                app:layout_constraintTop_toBottomOf="@id/form.animation.button"
+                android:id="@+id/raster.icon.animation.button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:text="Vector Icon Animation"
+                app:layout_constraintTop_toBottomOf="@id/raster.icon.animation.button"
+                android:id="@+id/vector.icon.animation.button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

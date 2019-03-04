@@ -16,13 +16,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RasterIconAnimationActivity"></activity>
-        <activity android:name=".KeyFrameActivity" />
-        <activity android:name=".CircularRevealTransitionActivity" />
-        <activity android:name=".interpolations.InterpolatorActivity" />
-        <activity android:name=".FormAnimationActivity" />
-        <activity android:name=".SceneTransitionActivity" />
-        <activity android:name=".RotationDemoActivity" />
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,6 +24,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".VectorIconAnimationActivity"/>
+        <activity android:name=".RasterIconAnimationActivity"/>
+        <activity android:name=".KeyFrameActivity"/>
+        <activity android:name=".CircularRevealTransitionActivity"/>
+        <activity android:name=".interpolations.InterpolatorActivity"/>
+        <activity android:name=".FormAnimationActivity"/>
+        <activity android:name=".SceneTransitionActivity"/>
+        <activity android:name=".RotationDemoActivity"/>
+
     </application>
 
 </manifest>
