@@ -52,5 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.form_animation_button).setOnClickListener(v ->
                 startActivity(new Intent(this, FormAnimationActivity.class)));
+
+        findViewById(R.id.raster_icon_animation_button).setOnClickListener(v ->
+                startActivity(new Intent(this, RasterIconAnimationActivity.class)));
     }
 }

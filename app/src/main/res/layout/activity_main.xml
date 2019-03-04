@@ -57,4 +57,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <Button
+        android:text="Raster Icon Animation"
+        app:layout_constraintTop_toBottomOf="@id/form.animation.button"
+        android:id="@+id/raster.icon.animation.button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

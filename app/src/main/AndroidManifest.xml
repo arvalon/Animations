@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".KeyFrameActivity"></activity>
+        <activity android:name=".RasterIconAnimationActivity"></activity>
+        <activity android:name=".KeyFrameActivity" />
         <activity android:name=".CircularRevealTransitionActivity" />
         <activity android:name=".interpolations.InterpolatorActivity" />
         <activity android:name=".FormAnimationActivity" />
