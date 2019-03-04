@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.circularrevealtransition_demo_button).setOnClickListener(v ->
                 startActivity(new Intent(this, CircularRevealTransitionActivity.class)));
 
+        findViewById(R.id.keyframe_demo_button).setOnClickListener(v ->
+                startActivity(new Intent(this, KeyFrameActivity.class)));
+
         findViewById(R.id.scene_transition_button).setOnClickListener(v ->
                 startActivity(new Intent(this, SceneTransitionActivity.class)));
 
