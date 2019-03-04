@@ -38,5 +38,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.scene_transition_button).setOnClickListener(v ->
                 startActivity(new Intent(this, SceneTransitionActivity.class)));
 
+        findViewById(R.id.form_animation_button).setOnClickListener(v ->
+                startActivity(new Intent(this, FormAnimationActivity.class)));
     }
 }

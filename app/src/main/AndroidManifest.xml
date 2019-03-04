@@ -16,7 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SceneTransitionActivity"></activity>
+        <activity android:name=".FormAnimationActivity"></activity>
+        <activity android:name=".SceneTransitionActivity" />
         <activity android:name=".RotationDemoActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
