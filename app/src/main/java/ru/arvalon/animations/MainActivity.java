@@ -32,8 +32,11 @@ public class MainActivity extends AppCompatActivity {
                 .apply(new RequestOptions().override(LOGO_SIZE, LOGO_SIZE))
                 .into(imageView);
 
-        findViewById(R.id.rotation_demo_button).setOnClickListener(v -> {
-            startActivity(new Intent(this, RotationDemoActivity.class));
-        });
+        findViewById(R.id.rotation_demo_button).setOnClickListener(v ->
+            startActivity(new Intent(this, RotationDemoActivity.class)));
+
+        findViewById(R.id.scene_transition_button).setOnClickListener(v ->
+                startActivity(new Intent(this, SceneTransitionActivity.class)));
+
     }
 }
