@@ -1,6 +1,7 @@
 package ru.arvalon.animations;
 
 import androidx.appcompat.app.AppCompatActivity;
+import ru.arvalon.animations.interpolations.InterpolatorActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +15,8 @@ import com.bumptech.glide.request.RequestOptions;
  *
  * ActionBar color
  * https://stackoverflow.com/questions/18288402/how-to-set-custom-actionbar-color-style/18288460
+ *
+ * Change app launcher icon
  */
 public class MainActivity extends AppCompatActivity {
 
@@ -34,6 +37,9 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.rotation_demo_button).setOnClickListener(v ->
             startActivity(new Intent(this, RotationDemoActivity.class)));
+
+        findViewById(R.id.interpolation_demo_button).setOnClickListener(v ->
+                startActivity(new Intent(this, InterpolatorActivity.class)));
 
         findViewById(R.id.scene_transition_button).setOnClickListener(v ->
                 startActivity(new Intent(this, SceneTransitionActivity.class)));
