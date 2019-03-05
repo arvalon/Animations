@@ -6,5 +6,6 @@
     <color name="accent">#C6FF00</color>
 
     <color name="key_frame_square">#311B92</color>
+    <color name="white">#FFFFFF</color>
 
 </resources>

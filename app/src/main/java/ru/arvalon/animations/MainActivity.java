@@ -12,11 +12,6 @@ import com.bumptech.glide.request.RequestOptions;
 
 /**
  * @author arvalon
- *
- * ActionBar color
- * https://stackoverflow.com/questions/18288402/how-to-set-custom-actionbar-color-style/18288460
- *
- * Change app launcher icon
  */
 public class MainActivity extends AppCompatActivity {
 
